@@ -37,6 +37,7 @@ const Header = () => {
                 <a href="https://www.linkedin.com/in/trongsonnguyen95" target="_blank" rel="noopener noreferrer"><img src={Linkedin} alt="linkedin" /></a>
                 <a href="https://www.kaggle.com/darkocean" target="_blank" rel="noopener noreferrer"><img src={Kaggle} alt="kaggle" /></a>
             </div>
+            <hr />
         </div>
     );
 }
