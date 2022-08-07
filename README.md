@@ -1,2 +1,2 @@
 # Personal Portfolio
-This project is still developing
+This project is still developing.

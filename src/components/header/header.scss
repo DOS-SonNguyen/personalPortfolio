@@ -29,7 +29,7 @@
         &__third{
             position: absolute;
             top: 73%;
-            left: 60%;
+            left: 55%;
             font-family: "BriocheLight";
             font-size: 3rem;
             letter-spacing: 0.4rem;
@@ -38,7 +38,7 @@
         &__fourth{
             position: absolute;
             top: 73%;
-            left: 66%;
+            left: 61%;
             font-family: "BriocheLight";
             font-size: 3rem;
             letter-spacing: 0.4rem;
@@ -85,7 +85,18 @@
             width: 2rem;
             height: 2rem;
             margin-right: 3rem;
+            &:hover{
+                cursor: pointer;
+                filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(7462%) hue-rotate(65deg) brightness(103%) contrast(113%);
+            }
         }
+    }
+    hr {
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        width: 90%;
+        border: 0.5px solid rgb(0, 0, 0, 0.2);
     }
     
 }
