@@ -1,0 +1,28 @@
+$primary-color: #FAF4F0;
+$secondary-color: #000000;
+
+.progress{
+    &__title{
+        font-family: "BriocheBold";
+        font-size: 0.8rem;
+        font-weight: 400;
+        color: $secondary-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__container{
+        background-color: $primary-color;
+        width: 100%;
+        border-radius: 1rem;
+        border: 1px solid $secondary-color;
+    }
+
+    &__bar{
+        background-color: $secondary-color;
+        padding: 0.6%;
+        border-radius: 1rem;
+    }
+
+}

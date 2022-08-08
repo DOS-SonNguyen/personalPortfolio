@@ -2,11 +2,9 @@ $primary-color: #FAF4F0;
 $secondary-color: #000000;
 
 .about {
-    padding: 0;
-    margin: 0;
     width: 100%;
     height: 45rem;
-    background-color: $primary-color;
+    position: relative;
 
     h1 {
         font-family: "BriocheLight";
@@ -17,7 +15,7 @@ $secondary-color: #000000;
         text-align: center;
     }
 
-    &__intro {
+    &__descr {
         font-family: "Montserrat";
         font-size: 1.2rem;
         font-weight: 300;
@@ -27,126 +25,110 @@ $secondary-color: #000000;
         text-align: center;
     }
 
-    &__content {
+    &__container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        text-align: center;
-        margin: 2rem 0;
+        padding: 2rem 0;
+    }
 
-        &__left {
-            width: 25rem;
-            height: 30rem;
-            padding: 0.5rem;
-            margin-right: 5rem;
-            background-color: $secondary-color;
+    &__title {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20rem;
+        margin: 1rem 0;
 
-            &__certificate {
-                font-family: "Montserrat";
-                font-size: 1.2rem;
-                font-weight: 300;
-                letter-spacing: 0.1rem;
-                padding: 0.5rem;
-                color: #fff;
-
-                &__items {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    margin: 1rem 0;
-
-                    &__vertical-bar {
-                        margin-left: 1rem;
-                        filter: invert(99%) sepia(30%) saturate(1874%) hue-rotate(294deg) brightness(114%) contrast(102%);
-                    }
-
-                    a {
-                        text-decoration: none;
-                        color: #fff;
-                        font-size: 0.8rem;
-                        margin-left: 4rem;
-                        text-align: left;
-                    }
-                }
-            }
-
-            &__scholarship {
-                font-family: "Montserrat";
-                font-size: 1.2rem;
-                font-weight: 300;
-                letter-spacing: 0.1rem;
-                padding: 0.5rem;
-                color: #fff;
-
-                &__items {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    margin: 1rem 0;
-
-                    &__vertical-bar {
-                        margin-left: 1rem;
-                        filter: invert(99%) sepia(30%) saturate(1874%) hue-rotate(294deg) brightness(114%) contrast(102%);
-                    }
-
-                    &__info {
-                        font-size: 0.8rem;
-                        margin-left: 4rem;
-                        text-align: left;
-                        height: 12.5rem;
-                        display: flex;
-                        flex-direction: column;
-
-                        p {
-                            color: #fff;
-                        }
-
-                        .jasso {
-                            margin-top: 2.5rem;
-                        }
-
-                        .jp-mf {
-                            margin-top: 5rem;
-                        }
-                    }
-                }
-            }
-        }
-
-        &__right {
-            width: 25rem;
-            height: 30rem;
-            padding: 0.5rem;
-            margin-left: 5rem;
-            background-color: $secondary-color;
-
-            &__education {
-                font-family: "Montserrat";
-                font-size: 1.2rem;
-                font-weight: 300;
-                letter-spacing: 0.1rem;
-                padding: 0.5rem;
-                color: #fff;
-
-                &__items {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    margin: 1rem 0;
-
-                    &__vertical-bar {
-                        margin-left: 1rem;
-                        filter: invert(99%) sepia(30%) saturate(1874%) hue-rotate(294deg) brightness(114%) contrast(102%);
-                    }
-
-                    &__info {
-                        color: #fff;
-                        font-size: 0.8rem;
-                        margin-left: 4rem;
-                        text-align: left;
-                    }
-                }
-            }
+        h2 {
+            font-family: "BriocheBold";
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            color: $secondary-color;
         }
     }
+
+
+    &__sections {
+        padding: 2rem 0;
+    }
+
+    hr{
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        width: 90%;
+        border: 0.5px solid rgb(0, 0, 0, 0.2);
+    }
+
+}
+
+
+
+.section {
+    &__data {
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        column-gap: 2rem;
+        height: 6rem;
+    }
+
+    &__title {
+        font-family: "BriocheBold";
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        color: $secondary-color;
+        margin: 0;
+    }
+
+    &__subtitle {
+        font-family: "Montserrat";
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.1rem;
+        color: #989d9d;
+        margin-top: 0.2rem;
+    }
+
+    &__date {
+        margin-top: 0.5rem;
+        font-size: 0.8rem;
+        color: #888888;
+    }
+
+    &__rounder {
+        display: inline-block;
+        border-radius: 50%;
+        width: 1rem;
+        height: 1rem;
+        background-color: $secondary-color;
+    }
+
+    &__line {
+        display: block;
+        width: 2px;
+        height: 100%;
+        background-color: $secondary-color;
+        transform: translate(7px, -7px);
+    }
+}
+
+.calendar-icon {
+    width: 0.8rem;
+    height: 0.8rem;
+    margin-right: 0.5rem;
+}
+
+.link-icon {
+    margin-left: 0.2rem;
+
+    img {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+.scholarship__info {
+    text-align: right;
 }
