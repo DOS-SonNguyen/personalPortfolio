@@ -2,14 +2,16 @@ $primary-color: #FAF4F0;
 $secondary-color: #000000;
 
 .progress{
+    margin-bottom: 1em;
     &__title{
         font-family: "BriocheBold";
         font-size: 0.8rem;
-        font-weight: 400;
+        font-weight: 500;
         color: $secondary-color;
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
+        margin-bottom: 0.2em;
     }
 
     &__container{
@@ -21,7 +23,7 @@ $secondary-color: #000000;
 
     &__bar{
         background-color: $secondary-color;
-        padding: 0.6%;
+        padding: 1%;
         border-radius: 1rem;
     }
 

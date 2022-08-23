@@ -1,7 +1,7 @@
 .skills{
     position: relative;
     width: 100%;
-    height: 45rem;
+    height: 30rem;
     h1{
         font-family: "BriocheLight";
         font-size: 3rem;
@@ -16,6 +16,23 @@
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 5rem;
         margin: 5rem;
+        h2{
+            margin-bottom: 1rem;
+            font-family: "BriocheBold";
+            font-size: 1.5rem;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+            color: #000000;
+            text-align: center;
+        }
+    }
+
+    hr {
+        position: absolute;
+        top: 100%;
+        left: 5%;
+        width: 90%;
+        border: 0.5px solid rgb(0, 0, 0, 0.2);
     }
 
 }
