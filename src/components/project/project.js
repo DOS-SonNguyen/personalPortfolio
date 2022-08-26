@@ -30,13 +30,6 @@ const Project = () => {
         }
     ];
 
-    function ArrowRightAltIcon(props) {
-        return (
-            <svg {...props}>
-                <path d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z" />
-            </svg>
-        );
-    }
     return (
         <div className="project">
             <h1>project</h1>
@@ -53,7 +46,7 @@ const Project = () => {
                         {projectData.map((project, index) => {
                             return (
                                 <Slide index={index} key={index} className="project__container__slide">
-                                    <a href={project.src} target="_blank">
+                                    <a href={project.src} target="_blank" rel="noopener noreferrer">
                                         <img src={project.image} alt={project.name} className="project__container__slide__image" />
                                         <div className="project__container__slide__description">
                                             <h2>{project.name}</h2>
@@ -67,9 +60,9 @@ const Project = () => {
                         )}
                     </Slider>
                     <div className='project__container__button'>
-                        <ButtonBack className='project__container__button--back'><img src={longArrowLeft} /></ButtonBack>
-                        <span className='project__container__button__title'><a href='https://github.com/DOS-SonNguyen' target="_blank">See all</a></span>
-                        <ButtonNext className='project__container__button--next'><img src={longArrowRight} /></ButtonNext>
+                        <ButtonBack className='project__container__button--back'><img src={longArrowLeft} alt="long arrow"/></ButtonBack>
+                        <span className='project__container__button__title'><a href='https://github.com/DOS-SonNguyen' target="_blank" rel='noopener noreferrer'>See all</a></span>
+                        <ButtonNext className='project__container__button--next'><img src={longArrowRight} alt="long arrow"/></ButtonNext>
                     </div>
 
                 </CarouselProvider>

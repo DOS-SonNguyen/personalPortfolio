@@ -27,7 +27,6 @@ const Skills = () => {
                     <Progress name="Vietnamese" percentage="100" />
                 </div>
             </div>
-            <hr />
         </div>
     );
 }

@@ -20,8 +20,8 @@ const Header = () => {
             <div>
                 <TypeAnimation cursor={true}
                     sequence={[
-                        'developer', 5000, ' ', 5000,
-                        'designer', 5000, ' ', 5000,
+                        'developer', 3000, ' ', 3000,
+                        'designer', 3000, ' ', 3000,
                     ]}
                     wrapper="h2"
                     repeat={Infinity}
@@ -34,7 +34,9 @@ const Header = () => {
                 </div>
                 <img src={ScrollDown} alt="scroll down" />
             </div>
-            <button className="header-btn btn btn-black" >Download CV</button>
+            <a href={CVFile} target="_blank" rel="noopener noreferrer" className="header-cv" download="CV_SonNguyen">
+                <button className="header-btn btn btn-black" >Download CV</button>
+            </a>
             <div className="header-social">
                 <a href="https://github.com/DOS-SonNguyen" target="_blank" rel="noopener noreferrer"><img src={Github} alt="github" /></a>
                 <a href="https://www.linkedin.com/in/trongsonnguyen95" target="_blank" rel="noopener noreferrer"><img src={Linkedin} alt="linkedin" /></a>
