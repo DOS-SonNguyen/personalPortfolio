@@ -6,13 +6,15 @@ import "./project.scss"
 import longArrowLeft from '../../assets/icons/long-arrow-left.svg';
 import longArrowRight from '../../assets/icons/long-arrow-right.svg';
 import testImage from "../../assets/images/pexels-pixabay-163194.jpg";
+
 import adImage from "../../assets/images/assignment_dashboard.png";
 import wfImage from "../../assets/images/weather_forcast.png";
+import pfImage from "../../assets/images/portfolio.png";
 
 const Project = () => {
     const projectData = [
         {
-            name: "Weather Forecast",
+            name: "weather forecast",
             image: wfImage,
             src: "https://neon-youtiao-0dad82.netlify.app/",
             description: "React app"
@@ -24,10 +26,10 @@ const Project = () => {
             description: "PERN application"
         },
         {
-            name: "sample",
-            image: testImage,
-            src: "#",
-            description: "Lorem ipsum dolor sit"
+            name: "portfolio",
+            image: pfImage,
+            src: "https://dossonnguyen.me",
+            description: "React landing page"
         }
     ];
 
