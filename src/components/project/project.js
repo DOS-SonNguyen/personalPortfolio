@@ -22,7 +22,7 @@ const Project = () => {
         {
             name: "assignment dashboard",
             image: adImage,
-            src: "https://assignment-dashboard-pern.herokuapp.com/",
+            src: "https://assignmentdashboard.azurewebsites.net",
             description: "PERN application"
         },
         {
